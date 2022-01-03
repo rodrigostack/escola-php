@@ -31,7 +31,7 @@
                     Cadastros
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">Alunos</a></li>
+                    <li><a class="dropdown-item" href="aluno.php">Alunos</a></li>
                     <li><a class="dropdown-item" href="#">Funcionários</a></li>
                     <li><a class="dropdown-item" href="#">Cursos</a></li>
                 </ul>
