@@ -1,0 +1,25 @@
+#btn{
+    margin-top: 10px;
+    padding: 5px;
+   margin-left: 20px;
+}
+
+.formaluno{
+    background-color: lightblue;
+    padding: 10px;
+    border: 2px solid lightseagreen;
+    border-radius: 5px;
+}
+
+.labelform{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: midnightblue;
+}
+
+#cabeçalho{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: navy;
+    text-align: center;
+}
