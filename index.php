@@ -1,7 +1,3 @@
-<?php 
-    require 'conection.php';
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -55,33 +51,35 @@
                     <th scope="col">Alunos</th>
                     <th scope="col">Curso</th>
                     <th scope="col">Cidade</th>
+                    <th scope="col">Pgto</th>
                     <th scope="col">Handle</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                        <?php
+                            require 'conection.php';
+                            $sql = "SELECT * FROM `alunos`";
+                            $busca = mysqli_query($conn, $sql);
+
+                            while ($array = mysqli_fetch_array($busca)) {
+                                $id = $array['id'];
+                                $nome = $array['nome'];
+                                $curso = $array['curso'];
+                                $cidade = $array['cidade'];
+                                $pgto = $array['pgto'];
+                       ?>
+
+                        <td><?php echo $id ?></td>
+                        <td><?php echo $nome ?></td>
+                        <td><?php echo $curso ?></td>
+                        <td><?php echo $cidade ?></td>
+                        <td><?php echo $pgto ?></td>
+                                   
                     </tr>
-                    <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">4</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    </tr>
+                    <?php  }    ?>
+                   
+                
                 </tbody>
              </table>
             </div>
