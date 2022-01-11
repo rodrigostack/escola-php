@@ -1,5 +1,5 @@
 body{
-    background-color: lightblue;
+    background-color: cornsilk;
 }
 .navbarback{
     background-color: cornflowerblue;
@@ -13,12 +13,3 @@ body{
     background-color: lightblue;
 }
 
-#btn{
-    margin-top: 10px;
-    padding: 5px;
-    display: flex;
-}
-
-.formaluno{
-    background-color: lightblue;
-}
