@@ -13,7 +13,7 @@
         <div id="cabeçalho">
             <h1>Cadastre-se aqui</h1>
         </div>
-        <form class="formaluno">
+        <form class="formaluno" action="validacao.php" method="POST">
         <div class="row">
             <div class="col-md-6">
                 <label class="form-label labelform">Nome Aluno:</label>

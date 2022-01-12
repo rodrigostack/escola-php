@@ -64,14 +64,14 @@
 
                             while ($array = mysqli_fetch_array($busca)) {
                                 $id = $array['id'];
-                                $nome = $array['nome'];
+                                $aluno = $array['aluno'];
                                 $curso = $array['curso'];
                                 $cidade = $array['cidade'];
                                 $pgto = $array['pgto'];
                        ?>
 
                         <td><?php echo $id ?></td>
-                        <td><?php echo $nome ?></td>
+                        <td><?php echo $aluno ?></td>
                         <td><?php echo $curso ?></td>
                         <td><?php echo $cidade ?></td>
                         <td><?php echo $pgto ?></td>
