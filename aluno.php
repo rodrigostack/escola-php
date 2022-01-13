@@ -17,21 +17,21 @@
         <div class="row">
             <div class="col-md-6">
                 <label class="form-label labelform">Nome Aluno:</label>
-                <input type = "text" placeholder = "Digite o aluno" class="form-control" name="aluno">
+                <input type = "text" placeholder = "Digite o aluno" class="form-control" name="aluno" required>
             </div>
             <div class="col-md-6">
                 <label class="form-label labelform">Curso:</label>
-                <input type = "text" placeholder = "Digite o curso" class="form-control" name="curso">
+                <input type = "text" placeholder = "Digite o curso" class="form-control" name="curso" required>
             </div>
         </div>  
         <div class="row">
             <div class="col-md-6">
             <label class="form-label labelform">Cidade:</label>
-                <input type = "text" placeholder = "Digite o Cidade" class="form-control" name="cidade">
+                <input type = "text" placeholder = "Digite o Cidade" class="form-control" name="cidade" required>
             </div>
             <div class="col-md-6">
             <label class="form-label labelform">Forma de Pgto:</label>
-                <select  class="form-control" name="pgto">
+                <select  class="form-control" name="pgto" required>
                     <option selected>.....</option>
                     <option value="dinheiro">Dinheiro</option>
                     <option value="debito">Débito</option>
